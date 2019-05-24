@@ -1,5 +1,7 @@
- b=int(input())
-if (b%2)==0:
-  print("even")
+k=int(input())
+if k%2==0:
+    print("Even")
 else:
-    print("invalid")
+    print("Odd")
+    
+    
