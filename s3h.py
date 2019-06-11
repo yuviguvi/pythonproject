@@ -1,28 +1,28 @@
 from itertools import permutations
-t=input()
-s=permutations(t)
+s=input()
+k=permutations(s)
 l=[]
-x=(-1)
+m=(-1)
 a="abcdefghijklmnopqrstuvwxyz"
-if a==t:
-  print(t)
-elif t==a[::-1]:
+if a==s:
+  print(s)
+elif s==a[::-1]:
   print("-1")
 else:
-    t=tuple(t)
-    for i in s:
-        l.append(i)
-    for i in l:
-        if i>t:
-            x=i
-            break
+	s=tuple(s)
+	for i in k:
+		l.append(i)
+	for i in l:
+		if i>s:
+			m=i
+			break
 
-    for i in l:
-        if i>s and i<x:
-            x=i
+	for i in l:
+		if i>s and i<m:
+			m=i
 
-    if x==-1:
-        print("-1")
-    else:
-        for i in x:
-            print(i,end="")
+	if m==-1:
+		print("-1")
+	else:
+		for i in m:
+			print(i,end="")
