@@ -1,10 +1,12 @@
-n,q=map(int,input().split())
-m=list(map(int,input().split()))
-s=[]
-for i in range(q):
-    s.append(list(map(int,input().split())))
-for i in s:
-  s1=0
-  for j in range(i[0]-1,i[1]):
-      s1=s1+m[j]
-  print(s1)    
+v,r=map(int,input().split())
+o=list(map(int,input().split()))
+t=[]
+for i in range(0,r):
+    f=[]
+    f=list(map(int,input().split()))
+    q=f[0]
+    for j in range(min(f)-1,max(f)):
+        if q>o[j]: q=o[j]
+    t.append(q)
+for i in range(0,len(t)):
+    print(t[i])
