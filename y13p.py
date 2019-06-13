@@ -1,12 +1,13 @@
-v,r=map(int,input().split())
-o=list(map(int,input().split()))
-t=[]
-for i in range(0,r):
+#yv
+s,n=map(int,input().split())
+p=list(map(int,input().split()))
+z=[]
+for i in range(0,n):
     f=[]
     f=list(map(int,input().split()))
-    q=f[0]
+    m=f[0]
     for j in range(min(f)-1,max(f)):
-        if q>o[j]: q=o[j]
-    t.append(q)
-for i in range(0,len(t)):
-    print(t[i])
+        if m>p[j]: m=p[j]
+    z.append(m)
+for i in range(0,len(z)):
+    print(z[i])
